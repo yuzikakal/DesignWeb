@@ -1,1 +1,47 @@
-/* css untuk index.html  */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #f3e6f8 0%, #fff0e5 100%);
+    min-height: 100vh;
+}
+
+header {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 20px 80px;
+    min-height: calc(100vh - 100px); 
+    gap: 50px;
+}
+
+/* Teks di kiri */
+.header-text {
+    flex: 2; 
+    font-size: 7rem;
+    /* font-weight: 800;    */
+    line-height: 1.2;
+    color: #4a2c40;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+}
+
+/* Teks di kanan */
+header div:last-child {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    height: 30rem;
+}
+
+/* Styling gambarnya biar nggak kaku */
+header img {
+    max-width: 100rem;
+    max-height: 100%;
+    height: auto;
+    border-radius: 20px; /* Bikin ujungnya tumpul */
+    box-shadow: 0 15px 35px rgba(0,0,0,0.1); /* Efek melayang */
+}
