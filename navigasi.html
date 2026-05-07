@@ -7,18 +7,20 @@
 
     .navigasi {
         display: flex;
-        /* background: linear-gradient(to bottom, rgb(255, 255, 255), rgb(235, 235, 235)); */
+        /* background: linear-gradient(135deg, #f3e6f8 0%, #ffe5fb 100%); */
+        background-color: #f3e6f8;
         justify-content: space-between;
-        padding: 20px 80px;
+        padding: 5px 80px;
         align-items: center;
         font-family: sans-serif;
+        /* border-bottom: solid 1px pink; */
     }
 
     .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
 
     .list {
         display: flex;
@@ -41,19 +43,18 @@
 
     .list a:hover {
         background-color: #4a2c40;
-        color: white; 
+        color: white;
         transition: all 0.3s ease-in-out;
     }
-
 </style>
 
 <nav class="navigasi">
-    <img width="200px" src="zamzammecca.png" alt="logo" onclick="window.location.href='index.html'">
+    <img width="200px" src="public/img/zamzammecca.png" alt="ZamzamMeccaCRAFT" onclick="window.location.href='index.html'">
     <ul class="list">
         <a href="index.html" target="_top">Beranda</a>
-        <a href="#" target="_top">Produk</a>
+        <a href="produk.html" target="_top">Produk</a>
+        <a href="#" target="_top">Tentang Kami</a>
+        <a href="#" target="_top">Galeri</a>
         <a href="#" target="_top">Kontak</a>
-        <a href="tentang.html" target="_top">Tentang Kami</a>
-        <a href="#" target="_top">Tim</a>
     </ul>
 </nav>

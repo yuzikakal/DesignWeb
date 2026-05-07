@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: linear-gradient(to bottom, #f3e6f8, #fffbf8);
+    /* background-color: rgb(255, 240, 249); */
+    min-height: 100vh;
+    overflow-y: scroll;
+}
+
+#nav-container {
+    position: fixed;
+    width: 100%;
+    z-index: 50;
+}

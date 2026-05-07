@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/produk.css">
+    <title>ZamzamMecca CRAFT</title>
+</head>
+
+<body>
+    <nav id="nav-container"></nav>
+
+    <header>
+        <h1>Katalog kami</h1>
+    </header>
+    <div id="container-produk" class="grid-produk"></div>
+
+    <script>
+        const dataProduk = [
+            { nama: "Buket uang", harga: "Rp. 100.000", foto: "public/img/buket1.jpeg" },
+            { nama: "Buket bunga", harga: "Rp. 200.000", foto: "public/img/buket2.jpeg" },
+            { nama: "Buket uang", harga: "Rp. 100.000", foto: "public/img/buket1.jpeg" },
+            { nama: "Buket bunga", harga: "Rp. 80.000", foto: "public/img/buket3.jpeg" },
+            { nama: "Buket bunga", harga: "Rp. 200.000", foto: "public/img/buket2.jpeg" },
+            { nama: "Buket uang", harga: "Rp. 100.000", foto: "public/img/buket1.jpeg" },
+            { nama: "Buket bunga", harga: "Rp. 200.000", foto: "public/img/buket2.jpeg" },
+            { nama: "Buket uang", harga: "Rp. 100.000", foto: "public/img/buket1.jpeg" },
+            { nama: "Buket bunga", harga: "Rp. 200.000", foto: "public/img/buket2.jpeg" },
+            { nama: "Buket uang", harga: "Rp. 100.000", foto: "public/img/buket1.jpeg" },
+            { nama: "Buket bunga", harga: "Rp. 200.000", foto: "public/img/buket2.jpeg" }
+        ];
+
+        const tampil = document.getElementById('container-produk');
+
+        dataProduk.forEach(produk => {
+            tampil.innerHTML += `
+                <div class="card">
+                    <div class="card-img">
+                        <img src="${produk.foto}" alt="${produk.nama}" fill>
+                    </div>
+                    <div class="card-info">
+                        <h3>${produk.nama}</h3>
+                        <p>${produk.harga}</p>
+                    </div>
+                </div>
+            `;
+        })
+    </script>
+
+    <script src="js/navigasi.js"></script>
+</body>
+
+</html>
