@@ -1,0 +1,190 @@
+<style>
+    .footer {
+        background-color: #ff80d5; 
+        color: #f3e6f8; 
+        font-family: sans-serif;
+        padding: 50px 80px 20px 80px; 
+    }
+
+    .footer-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        gap: 30px;
+        border-bottom: 1px solid rgba(243, 230, 248, 0.2);
+        padding-bottom: 40px;
+        margin-bottom: 20px;
+    }
+
+    .footer-brand {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        max-width: 300px;
+    }
+
+    .footer-logo {
+        width: 180px;
+        cursor: pointer;
+        transition: transform 0.3s ease;
+    }
+
+    .footer-logo:hover {
+        transform: scale(1.05);
+    }
+
+    .footer-brand p {
+        font-size: 15px;
+        line-height: 1.6;
+        color: rgba(243, 230, 248, 0.85);
+    }
+
+    .footer-center {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .footer-title {
+        font-size: 18px;
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
+
+    .footer-links {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        list-style: none;
+    }
+
+    .footer-links a {
+        text-decoration: none;
+        color: rgba(243, 230, 248, 0.85);
+        font-size: 15px;
+        transition: all 0.3s ease;
+        width: fit-content;
+    }
+
+    .footer-links a:hover {
+        color: #ffffff;
+        padding-left: 8px; /* Efek bergeser sedikit saat di-hover */
+    }
+
+    /* Styling untuk ikon Sosial Media */
+    .footer-social {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .social-icons {
+        display: flex;
+        gap: 15px;
+    }
+
+    .social-icons a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: rgba(243, 0, 227, 0.198);
+        transition: all 0.3s ease;
+    }
+
+    .social-icons a img {
+        width: 20px;
+        height: 20px;
+        transition: transform 0.3s ease;
+    }
+
+    .social-icons a:hover {
+        background-color: rgba(255, 0, 225, 0.603);
+        transform: translateY(-3px);
+    }
+
+    .social-icons a:hover img {
+        transform: scale(1.1);
+    }
+
+    .footer-bottom {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 14px;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    /* Responsive untuk layar HP */
+    @media screen and (max-width: 768px) {
+        .footer {
+            padding: 40px 20px 20px 20px;
+        }
+        .footer-content {
+            flex-direction: column;
+            text-align: center;
+            align-items: center;
+        }
+        .footer-brand {
+            align-items: center;
+        }
+        .footer-links {
+            align-items: center;
+        }
+        .footer-links a:hover {
+            padding-left: 0;
+            transform: scale(1.05);
+        }
+        .footer-bottom {
+            flex-direction: column;
+            text-align: center;
+        }
+    }
+</style>
+
+<footer class="footer">
+    <div class="footer-content">
+        <!-- Bagian Kiri -->
+        <div class="footer-brand">
+            <img src="public/img/zamzammecca.png" alt="ZamzamMecca CRAFT logo" class="footer-logo" onclick="window.location.href='index.html'">
+            <p>Aksesoris handmade penuh cinta untuk momen berhargamu.</p>
+        </div>
+
+        <!-- Bagian Tengah -->
+        <div class="footer-center">
+            <div class="footer-title">Jelajahi</div>
+            <div class="footer-links">
+                <a href="index.html">Beranda</a>
+                <a href="produk.html">Produk</a>
+                <a href="#">Tentang Kami</a>
+                <a href="#">Galeri</a>
+            </div>
+        </div>
+
+        <!-- Bagian Kanan: Sosial Media -->
+        <div class="footer-social">
+            <div class="footer-title">Hubungi Kami</div>
+            <div class="social-icons">
+                <!-- Ganti href dengan link sosmed/nomor WA aslimu -->
+                <a href="#" target="_blank" title="Instagram">
+                    <img src="public/icons/ig.svg" alt="Instagram">
+                </a>
+                <a href="#" target="_blank" title="WhatsApp">
+                    <img src="public/icons/wa.svg" alt="WhatsApp">
+                </a>
+                <a href="#" target="_blank" title="Facebook">
+                    <img src="public/icons/fb.svg" alt="Facebook">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bagian Bawah: Copyright -->
+    <div class="footer-bottom">
+        <p>&copy; <span id="current-year"></span> ZamzamMecca CRAFT. All rights reserved.</p>
+    </div>
+</footer>
