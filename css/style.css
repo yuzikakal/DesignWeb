@@ -26,6 +26,34 @@ header {
     height: 30rem;
 }
 
+.header-produk {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 25px;
+    background-color: #4a2c40;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: 0.3s;
+    width: fit-content;
+}
+
+.header-whatsapp {
+    display: inline-block, flex;
+    margin-top: 20px;
+    padding: 12px 25px;
+    background-color: #4a2c40;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: 0.3s;
+    width: fit-content;
+}
+
 /* Styling gambarnya biar nggak kaku */
 .header-img img {
     border-radius: 20px; /* Bikin ujungnya tumpul */
