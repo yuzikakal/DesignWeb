@@ -26,11 +26,20 @@ header {
     height: 30rem;
 }
 
+.header-hubungi {
+    display: flex;
+    gap: 30px;
+    padding-top: 20px;
+}
+
 .header-produk {
-    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap : 1rem;
     margin-top: 20px;
-    padding: 12px 25px;
-    background-color: #4a2c40;
+    padding: 15px 40px;
+    background-color: #dd3aa7;
     color: white;
     text-decoration: none;
     border-radius: 25px;
@@ -40,11 +49,20 @@ header {
     width: fit-content;
 }
 
+.header-produk img {
+    width: 25px;
+    height: 25px;
+    margin-right: 1px;
+}
+
 .header-whatsapp {
-    display: inline-block, flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
     margin-top: 20px;
-    padding: 12px 25px;
-    background-color: #4a2c40;
+    padding: 15px 40px;
+    background-color: #25D366 ;
     color: white;
     text-decoration: none;
     border-radius: 25px;
@@ -52,6 +70,12 @@ header {
     font-weight: bold;
     transition: 0.3s;
     width: fit-content;
+}
+
+.header-whatsapp img {
+    width: 25px;
+    height: 25px;
+    margin-right: 1px;
 }
 
 /* Styling gambarnya biar nggak kaku */
