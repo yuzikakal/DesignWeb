@@ -15,7 +15,13 @@ function loadComponent(url, containerId, callback = null) {
 }
 
 // Memanggil function untuk Navigasi
-loadComponent("navigasi.html", "nav-container");
+loadComponent("navigasi.html", "nav-container", function() {
+  // Add toggle menu function after nav is loaded
+  window.toggleMenu = function() {
+    const list = document.querySelector('.list');
+    list.classList.toggle('show');
+  };
+});
 
 // Memanggil function untuk Footer
 loadComponent("footer.html", "footer-container", function() {

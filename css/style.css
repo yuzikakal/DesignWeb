@@ -83,3 +83,45 @@ header {
     border-radius: 20px; /* Bikin ujungnya tumpul */
     box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
 }
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        min-height: auto;
+        padding: 120px 20px 50px 20px;
+        gap: 30px;
+    }
+
+    .header-text {
+        padding: 0;
+        font-size: 20px;
+        order: 2;
+    }
+
+    .header-img {
+        order: 1;
+        height: auto;
+        max-width: 100%;
+    }
+
+    .header-img img {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+    }
+
+    .header-hubungi {
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+    }
+
+    .header-produk, .header-whatsapp {
+        width: 100%;
+        max-width: 250px;
+        justify-content: center;
+    }
+}

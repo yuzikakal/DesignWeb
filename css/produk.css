@@ -42,3 +42,20 @@ header {
     padding: 20px;
     gap: 5px;
 }
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    header {
+        padding: 120px 20px 20px 20px;
+    }
+
+    .grid-produk {
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 300px;
+    }
+}
