@@ -15,30 +15,40 @@
     <header>
         <h1>Katalog kami</h1>
     </header>
+
     <div id="container-produk" class="grid-produk"></div>
 
-    <script>
-        const dataProduk = [
-            { nama: "Buket uang", harga: "Rp. 100.000", foto: "public/img/buket1.jpeg" },
-            { nama: "Buket bunga", harga: "Rp. 200.000", foto: "public/img/buket2.jpeg" },
-            { nama: "Buket uang", harga: "Rp. 100.000", foto: "public/img/buket1.jpeg" },
-            { nama: "Buket bunga", harga: "Rp. 80.000", foto: "public/img/buket3.jpeg" },
-            { nama: "Buket bunga", harga: "Rp. 200.000", foto: "public/img/buket2.jpeg" },
-            { nama: "Buket uang", harga: "Rp. 100.000", foto: "public/img/buket1.jpeg" },
-            { nama: "Buket bunga", harga: "Rp. 200.000", foto: "public/img/buket2.jpeg" },
-            { nama: "Buket uang", harga: "Rp. 100.000", foto: "public/img/buket1.jpeg" },
-            { nama: "Buket bunga", harga: "Rp. 200.000", foto: "public/img/buket2.jpeg" },
-            { nama: "Buket uang", harga: "Rp. 100.000", foto: "public/img/buket1.jpeg" },
-            { nama: "Buket bunga", harga: "Rp. 200.000", foto: "public/img/buket2.jpeg" }
-        ];
+    <!-- Pop-Up -->
+    <div id="popup-modal" class="modal-overlay">
+        <div class="modal-content">
+            <button class="btn-tutup" id="tutup-modal">&times;</button>
+            <img id="modal-gambar" class="modal-img" src="" alt="Produk">
+            <div class="modal-body">
+                <h3 id="modal-nama"></h3>
+                <div id="modal-harga" class="harga"></div>
+                <p id="modal-deskripsi" class="deskripsi"></p>
+                <a id="modal-wa" class="btn-wa" href="#" target="_blank">
+                    <img src="public/icons/wa.svg" alt="WhatsApp">
+                    Pesan via WhatsApp
+                </a>
+            </div>
+        </div>
+    </div>
 
+    <footer id="footer-container"></footer>
+
+    <script src="js/data.js"></script>
+    <script src="js/main.js"></script>
+
+    <script>
+        // TAMPILKAN PRODUK KE CARD
         const tampil = document.getElementById('container-produk');
 
-        dataProduk.forEach(produk => {
+        dataProduk.forEach((produk, i) => {
             tampil.innerHTML += `
-                <div class="card">
+                <div class="card" onclick="bukaModal(${i})">
                     <div class="card-img">
-                        <img src="${produk.foto}" alt="${produk.nama}" fill>
+                        <img src="${produk.foto}" alt="${produk.nama}">
                     </div>
                     <div class="card-info">
                         <h3>${produk.nama}</h3>
@@ -46,11 +56,50 @@
                     </div>
                 </div>
             `;
-        })
-    </script>
-    <footer id="footer-container"></footer>
+        });
 
-    <script src="js/main.js"></script>
+        // LOGIKA POP-UP
+        const modal = document.getElementById('popup-modal');
+        const modalGambar = document.getElementById('modal-gambar');
+        const modalNama = document.getElementById('modal-nama');
+        const modalHarga = document.getElementById('modal-harga');
+        const modalDeskripsi = document.getElementById('modal-deskripsi');
+        const modalWa = document.getElementById('modal-wa');
+        const btnTutup = document.getElementById('tutup-modal');
+
+        // Fungsi buka modal dan isi datanya
+        function bukaModal(index) {
+            const produk = dataProduk[index];
+
+            modalGambar.src = produk.foto;
+            modalNama.innerText = produk.nama;
+            modalHarga.innerText = produk.harga;
+            modalDeskripsi.innerText = produk.deskripsi || "Tidak ada deskripsi untuk produk ini.";
+
+            // Buat link WhatsApp otomatis
+            const pesanWa = `Halo Kak, saya mau pesan *${produk.nama}* (${produk.harga})`;
+            modalWa.href = `https://wa.me/${produk.wa}?text=${encodeURIComponent(pesanWa)}`;
+
+            modal.classList.add('active');
+            document.body.style.overflow = 'none'; // Nonaktifkan scroll saat pop up aktif
+        }
+
+        // Fungsi tutup pop up
+        function tutupModal() {
+            modal.classList.remove('active');
+            document.body.style.overflow = 'auto'; // Kembalikan scroll
+        }
+
+        // Tutup saat tombol X ditekan
+        btnTutup.addEventListener('click', tutupModal);
+
+        // Tutup saat klik area luar pop up
+        modal.addEventListener('click', function (e) {
+            if (e.target === modal) {
+                tutupModal();
+            }
+        });
+    </script>
 </body>
 
 </html>

@@ -10,7 +10,8 @@
 </head>
 
 <body>
-    <nav id="nav-container"></nav> <!-- untuk navbar -->
+    <nav id="nav-container"></nav>
+
     <header>
         <div class="header-text">
             <h1>Setiap Karyanya,</h1>
@@ -34,18 +35,87 @@
             <img src="public/img/buket1.jpeg" alt="foto">
         </div>
     </header>
-    <main>
-        <section class="keunggulan">
 
+    <main>
+        <!-- Section Keunggulan -->
+        <section class="keunggulan-section">
+            <div class="keunggulan-header">
+                <h2>Keunggulan Kami</h2>
+                <p>Kami hadir untuk mewujudkan hadiah impianmu dengan sentuhan personal dan kualitas terbaik.</p>
+            </div>
+
+            <div class="keunggulan-grid">
+                <div class="keunggulan-card">
+                    <div class="keunggulan-bar"></div>
+                    <div class="keunggulan-icon">🎀</div>
+                    <h3>100% Handmade</h3>
+                    <p>Dibuat penuh cinta dan ketelitian di setiap detailnya agar hasilnya sempurna.</p>
+                </div>
+
+                <div class="keunggulan-card">
+                    <div class="keunggulan-bar"></div>
+                    <div class="keunggulan-icon">🎁</div>
+                    <h3>Bisa Custom</h3>
+                    <p>Wujudkan desain impianmu, warna dan tema bisa request sesuai keinginan.</p>
+                </div>
+
+                <div class="keunggulan-card">
+                    <div class="keunggulan-bar"></div>
+                    <div class="keunggulan-icon">⚡</div>
+                    <h3>Pengerjaan Cepat</h3>
+                    <p>Proses produksi kilat dan tepat waktu, pesanan Anda siap dikirim tanpa perlu menunggu lama.</p>
+                </div>
+
+
+                <div class="keunggulan-card">
+                    <div class="keunggulan-bar"></div>
+                    <div class="keunggulan-icon">💬</div>
+                    <h3>Respon Cepat</h3>
+                    <p>Konsultasikan kebutuhan hadiahmu dengan kami langsung via WhatsApp.</p>
+                </div>
+            </div>
         </section>
 
+        <!-- 2. Section Produk Terlaris -->
         <section class="produk-terlaris">
+            <h2>Paling Diminati</h2>
+            <p>Rekomendasi buket dan aksesoris terbaik dari kami.</p>
 
+            <div id="container-terlaris" class="grid-terlaris">
+                <!-- menampilkan produk -->
+            </div>
+
+            <a href="produk.html" class="btn-lihat-semua">Lihat Semua Katalog</a>
         </section>
     </main>
-    <footer id="footer-container"></footer> <!-- untuk footer -->
 
+    <footer id="footer-container"></footer>
+
+    <script src="js/data.js"></script>
     <script src="js/main.js"></script>
+
+    <script>
+        // memanggil Produk Terlaris di Beranda
+        const tampilTerlaris = document.getElementById('container-terlaris');
+
+        if (typeof dataProdukPrioritas !== 'undefined' && dataProdukPrioritas.length > 0) {
+            dataProdukPrioritas.forEach(produk => {
+                tampilTerlaris.innerHTML += `
+                    <div class="card-terlaris">
+                        <div class="card-img">
+                            <img src="${produk.foto}" alt="${produk.nama}">
+                        </div>
+                        <div class="card-info">
+                            <h3>${produk.nama}</h3>
+                            <p>${produk.harga}</p>
+                        </div>
+                    </div>
+                `;
+            });
+        } else {
+            tampilTerlaris.innerHTML = `<p style="text-align:center; color:#888;">Produk terlaris segera hadir!</p>`;
+        }
+    </script>
 </body>
 
 </html>

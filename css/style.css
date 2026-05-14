@@ -1,17 +1,17 @@
-/* index.html */
-
+/* index.html > style.css */
+/* header style */
 header {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    align-items: center; 
-    min-height: calc(100vh - 100px); 
+    align-items: center;
+    min-height: calc(100vh - 100px);
     gap: 50px;
 }
 
 /* Teks di kiri */
 .header-text {
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
     font-size: 25px;
     font-family: 'Nunito', monospace, sans-serif;
     padding: 100px;
@@ -36,7 +36,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap : 1rem;
+    gap: 1rem;
     margin-top: 20px;
     padding: 15px 40px;
     background-color: #dd3aa7;
@@ -53,6 +53,8 @@ header {
     width: 25px;
     height: 25px;
     margin-right: 1px;
+    filter: invert(100%) sepia(100%) grayscale(100%) brightness(200%);
+    color: white;
 }
 
 .header-whatsapp {
@@ -62,7 +64,7 @@ header {
     gap: 1rem;
     margin-top: 20px;
     padding: 15px 40px;
-    background-color: #25D366 ;
+    background-color: #25D366;
     color: white;
     text-decoration: none;
     border-radius: 25px;
@@ -78,13 +80,206 @@ header {
     margin-right: 1px;
 }
 
-/* Styling gambarnya biar nggak kaku */
 .header-img img {
-    border-radius: 20px; /* Bikin ujungnya tumpul */
+    border-radius: 20px;
     box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
 }
 
-/* Mobile Styles */
+/* Main content stye */
+main {
+    padding: 0 20px;
+}
+
+/* 1. Keunggulan */
+.keunggulan-section {
+    padding: 80px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.keunggulan-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.keunggulan-header h2 {
+    font-size: 32px;
+    color: #4a2c40;
+    margin-bottom: 15px;
+}
+
+.keunggulan-header p {
+    font-size: 16px;
+    color: #6d4c62;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+.keunggulan-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.keunggulan-card {
+    position: relative;
+    background-color: white;
+    padding: 40px 25px;
+    border-radius: 12px;
+    text-align: center;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    transition: all 0.4s ease;
+}
+
+/* Garis atas yang memanjang saat hover */
+.keunggulan-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60px; /* Panjang awal */
+    height: 4px;
+    background-color: #dd3aa7;
+    transition: all 0.4s ease;
+}
+
+.keunggulan-icon {
+    font-size: 35px;
+    margin-bottom: 20px;
+    background-color: rgba(221, 58, 167, 0.1); 
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    transition: all 0.4s ease;
+}
+
+.keunggulan-card h3 {
+    font-size: 18px;
+    color: #4a2c40;
+    margin-bottom: 10px;
+    transition: color 0.4s ease;
+}
+
+.keunggulan-card p {
+    font-size: 14px;
+    color: #6d4c62;
+    line-height: 1.6;
+    transition: color 0.4s ease;
+}
+
+.keunggulan-card:hover {
+    background-color: #dd3aa7; 
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(221, 58, 167, 0.3);
+}
+
+.keunggulan-card:hover .keunggulan-bar {
+    width: 100%; /* Garis atas memanjang penuh */
+    background-color: white;
+}
+
+.keunggulan-card:hover .keunggulan-icon {
+    background-color: white;
+    transform: scale(1.1);
+}
+
+.keunggulan-card:hover h3 {
+    color: white;
+}
+
+.keunggulan-card:hover p {
+    color: rgba(255, 255, 255, 0.9); 
+}
+
+/* 2. Produk Terlaris */
+.produk-terlaris {
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto 80px auto;
+}
+
+.produk-terlaris h2 {
+    font-size: 28px;
+    color: #4a2c40;
+    margin-bottom: 10px;
+}
+
+.produk-terlaris>p {
+    font-size: 15px;
+    color: #6d4c62;
+    margin-bottom: 40px;
+}
+
+.grid-terlaris {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    margin-bottom: 40px;
+}
+
+.card-terlaris {
+    background-color: white;
+    border-radius: 16px;
+    text-align: center;
+    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1);
+    transition: transform 0.2s ease;
+}
+
+.card-terlaris:hover {
+    transform: translateY(-5px);
+}
+
+.card-terlaris .card-img {
+    aspect-ratio: 3/4;
+    overflow: hidden;
+    border-radius: 16px 16px 0 0;
+}
+
+.card-terlaris .card-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-terlaris .card-info {
+    padding: 15px 10px;
+}
+
+.card-terlaris .card-info h3 {
+    font-size: 15px;
+    color: #4a2c40;
+    margin-bottom: 5px;
+}
+
+.card-terlaris .card-info p {
+    font-size: 14px;
+    font-weight: bold;
+    color: #dd3aa7;
+}
+
+.btn-lihat-semua {
+    display: inline-block;
+    padding: 12px 30px;
+    border: 2px solid #dd3aa7;
+    color: #dd3aa7;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-lihat-semua:hover {
+    background-color: #dd3aa7;
+    color: white;
+}
+
+/* Responsive Mobile */
 @media (max-width: 768px) {
     header {
         display: flex;
@@ -119,9 +314,42 @@ header {
         align-items: center;
     }
 
-    .header-produk, .header-whatsapp {
+    .header-produk,
+    .header-whatsapp {
         width: 100%;
         max-width: 250px;
         justify-content: center;
+    }
+
+    .keunggulan-grid {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 15px;
+    }
+
+    .keunggulan-section {
+        padding: 50px 15px;
+    }
+
+    .keunggulan-header h2 {
+        font-size: 24px;
+    }
+
+    .keunggulan-card {
+        padding: 30px 15px;
+    }
+
+    .keunggulan-icon {
+        width: 60px;
+        height: 60px;
+        font-size: 30px;
+    }
+
+    .produk-terlaris h2 {
+        font-size: 22px;
+    }
+
+    .grid-terlaris {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
     }
 }

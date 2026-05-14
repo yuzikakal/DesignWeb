@@ -1,9 +1,9 @@
 <style>
     .footer {
-        background-color: #ff80d5; 
-        color: #f3e6f8; 
+        background-color: #ff80d5;
+        color: rgba(23, 3, 31, 0.759);
         font-family: sans-serif;
-        padding: 50px 80px 20px 80px; 
+        padding: 50px 80px 20px 80px;
     }
 
     .footer-content {
@@ -27,17 +27,19 @@
     .footer-logo {
         width: 180px;
         cursor: pointer;
-        transition: transform 0.3s ease;
+        transition: transform 0.3s ease, filter 0.3s ease;
+        filter: drop-shadow(0 6px 8px rgba(255, 255, 255, 0.396));
     }
 
     .footer-logo:hover {
         transform: scale(1.05);
+        filter: drop-shadow(0 12px 12px rgba(255, 255, 255, 0.8));
     }
 
     .footer-brand p {
         font-size: 15px;
         line-height: 1.6;
-        color: rgba(243, 230, 248, 0.85);
+        color: rgba(23, 3, 31, 0.759);
     }
 
     .footer-center {
@@ -61,15 +63,15 @@
 
     .footer-links a {
         text-decoration: none;
-        color: rgba(243, 230, 248, 0.85);
+        color: rgba(23, 3, 31, 0.759);
         font-size: 15px;
         transition: all 0.3s ease;
         width: fit-content;
     }
 
     .footer-links a:hover {
-        color: #ffffff;
-        padding-left: 8px; /* Efek bergeser sedikit saat di-hover */
+        color: #000000;
+        padding-left: 8px;
     }
 
     /* Styling untuk ikon Sosial Media */
@@ -124,21 +126,26 @@
         .footer {
             padding: 40px 20px 20px 20px;
         }
+
         .footer-content {
             flex-direction: column;
             text-align: center;
             align-items: center;
         }
+
         .footer-brand {
             align-items: center;
         }
+
         .footer-links {
             align-items: center;
         }
+
         .footer-links a:hover {
             padding-left: 0;
             transform: scale(1.05);
         }
+
         .footer-bottom {
             flex-direction: column;
             text-align: center;
@@ -150,7 +157,8 @@
     <div class="footer-content">
         <!-- Bagian Kiri -->
         <div class="footer-brand">
-            <img src="public/img/zamzammecca.png" alt="ZamzamMecca CRAFT logo" class="footer-logo" onclick="window.location.href='index.html'">
+            <img src="public/img/zamzammecca.png" alt="ZamzamMecca CRAFT logo" class="footer-logo"
+                onclick="window.location.href='index.html'">
             <p>Aksesoris handmade penuh cinta untuk momen berhargamu.</p>
         </div>
 
@@ -160,8 +168,8 @@
             <div class="footer-links">
                 <a href="index.html">Beranda</a>
                 <a href="produk.html">Produk</a>
-                <a href="#">Tentang Kami</a>
-                <a href="#">Galeri</a>
+                <a href="tentang.html">Tentang Kami</a>
+                <a href="galeri.html">Galeri</a>
             </div>
         </div>
 
@@ -169,14 +177,14 @@
         <div class="footer-social">
             <div class="footer-title">Hubungi Kami</div>
             <div class="social-icons">
-                <!-- Ganti href dengan link sosmed/nomor WA aslimu -->
-                <a href="#" target="_blank" title="Instagram">
+                <a href="https://www.instagram.com/eka_zamzammecca_craft" target="_blank" rel="noopener noreferrer"
+                    title="Instagram">
                     <img src="public/icons/ig.svg" alt="Instagram">
                 </a>
-                <a href="#" target="_blank" title="WhatsApp">
+                <a href="https://wa.me/6285262526261" target="_blank" rel="noopener noreferrer" title="WhatsApp">
                     <img src="public/icons/wa.svg" alt="WhatsApp">
                 </a>
-                <a href="#" target="_blank" title="Facebook">
+                <a href="https://facebook.com/eka.walady" target="_blank" rel="noopener noreferrer" title="Facebook">
                     <img src="public/icons/fb.svg" alt="Facebook">
                 </a>
             </div>
