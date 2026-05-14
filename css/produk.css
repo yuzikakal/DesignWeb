@@ -126,7 +126,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 8px;
+    gap: 10px;
     background-color: #25D366;
     color: white;
     text-decoration: none;
@@ -135,6 +135,11 @@ header {
     font-weight: bold;
     font-size: 15px;
     transition: background-color 0.3s;
+}
+
+.btn-wa img {
+    width: 20px;
+    height: 20px;
 }
 
 .btn-wa:hover {
