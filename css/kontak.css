@@ -1,0 +1,193 @@
+/* kontak.html > kontak.css  */
+
+.kontak-hero {
+    padding: 150px 20px 60px 20px;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.kontak-hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 38px;
+    color: #4a2c40;
+    margin-bottom: 15px;
+}
+
+.kontak-hero p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    color: #6d4c62;
+}
+
+/* Grid 2 Kolom */
+.kontak-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    max-width: 1000px;
+    margin: 0 auto 60px auto;
+    padding: 0 20px;
+}
+
+.kontak-form-card, .kontak-info-card {
+    background-color: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(74, 44, 64, 0.08);
+}
+
+.kontak-form-card h2, .kontak-info-card h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 24px;
+    color: #4a2c40;
+    margin-bottom: 25px;
+}
+
+/* Styling Form */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    color: #4a2c40;
+    margin-bottom: 8px;
+}
+
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 12px 16px;
+    border: 1px solid #e0cdd6;
+    border-radius: 10px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    color: #4a2c40;
+    transition: border-color 0.3s;
+}
+
+.form-group input:focus, .form-group textarea:focus {
+    outline: none;
+    border-color: #dd3aa7;
+}
+
+.btn-wa-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    padding: 14px;
+    background-color: #25D366;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-wa-form:hover {
+    background-color: #1ebe5d;
+}
+
+.btn-wa-form img {
+    width: 22px;
+    height: 22px;
+    filter: brightness(0) invert(1); /* Ikon jadi putih */
+}
+
+/* Styling Info Kontak */
+.info-item {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 25px;
+    align-items: flex-start;
+}
+
+.info-icon {
+    font-size: 24px;
+    width: 45px;
+    height: 45px;
+    background-color: rgba(221, 58, 167, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.info-item h4 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    color: #4a2c40;
+    margin-bottom: 3px;
+}
+
+.info-item p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    color: #6d4c62;
+}
+
+.info-sosmed {
+    display: flex;
+    gap: 12px;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #f3e6f8;
+}
+
+.info-sosmed a {
+    width: 40px;
+    height: 40px;
+    background-color: rgba(74, 44, 64, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.info-sosmed a img {
+    width: 20px;
+    height: 20px;
+}
+
+.info-sosmed a:hover {
+    background-color: #4a2c40;
+}
+
+.info-sosmed a:hover img {
+    filter: brightness(0) invert(1); /* Putih saat hover */
+}
+
+/* Maps Bawah */
+.map-section-kontak {
+    max-width: 1000px;
+    margin: 0 auto 80px auto;
+    padding: 0 20px;
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 350px;
+    display: block;
+    box-shadow: 0 10px 30px rgba(74, 44, 64, 0.1);
+    border-radius: 16px;
+}
+
+/* mobile responsiv */
+@media (max-width: 768px) {
+    .kontak-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .kontak-form-card, .kontak-info-card {
+        padding: 25px;
+    }
+}

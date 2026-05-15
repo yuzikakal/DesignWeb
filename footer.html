@@ -1,8 +1,8 @@
 <style>
     .footer {
         background-color: #ff80d5;
-        color: rgba(23, 3, 31, 0.759);
-        font-family: sans-serif;
+        color: rgba(23, 3, 31, 0.85);
+        font-family: 'Poppins', sans-serif; /* GANTI KE POPPINS */
         padding: 50px 80px 20px 80px;
     }
 
@@ -11,8 +11,8 @@
         justify-content: space-between;
         align-items: flex-start;
         flex-wrap: wrap;
-        gap: 30px;
-        border-bottom: 1px solid rgba(243, 230, 248, 0.2);
+        gap: 40px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.3); /* Garis putih agar lebih soft */
         padding-bottom: 40px;
         margin-bottom: 20px;
     }
@@ -28,30 +28,32 @@
         width: 180px;
         cursor: pointer;
         transition: transform 0.3s ease, filter 0.3s ease;
-        filter: drop-shadow(0 6px 8px rgba(255, 255, 255, 0.396));
+        filter: drop-shadow(0 4px 6px rgba(74, 44, 64, 0.2)); /* Shadow disesuaikan */
     }
 
     .footer-logo:hover {
         transform: scale(1.05);
-        filter: drop-shadow(0 12px 12px rgba(255, 255, 255, 0.8));
+        filter: drop-shadow(0 8px 10px rgba(74, 44, 64, 0.4));
     }
 
     .footer-brand p {
-        font-size: 15px;
-        line-height: 1.6;
-        color: rgba(23, 3, 31, 0.759);
+        font-size: 14px; /* Sedikit diperkecil agar manis */
+        line-height: 1.7;
+        color: rgba(23, 3, 31, 0.85);
     }
 
-    .footer-center {
+    .footer-center, .footer-social {
         display: flex;
         flex-direction: column;
         gap: 15px;
     }
 
     .footer-title {
-        font-size: 18px;
-        font-weight: bold;
+        font-family: 'Playfair Display', serif; /* PAKAI PLAYFAIR DISPLAY */
+        font-size: 22px;
+        font-weight: 700;
         margin-bottom: 5px;
+        color: #4a2c40;
     }
 
     .footer-links {
@@ -63,22 +65,15 @@
 
     .footer-links a {
         text-decoration: none;
-        color: rgba(23, 3, 31, 0.759);
-        font-size: 15px;
+        color: rgba(23, 3, 31, 0.85);
+        font-size: 14px;
         transition: all 0.3s ease;
         width: fit-content;
     }
 
     .footer-links a:hover {
-        color: #000000;
+        color: #ffffff; /* JADI PUTIH SAAT HOVER */
         padding-left: 8px;
-    }
-
-    /* Styling untuk ikon Sosial Media */
-    .footer-social {
-        display: flex;
-        flex-direction: column;
-        gap: 15px;
     }
 
     .social-icons {
@@ -90,35 +85,39 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 40px;
-        height: 40px;
+        width: 42px;
+        height: 42px;
         border-radius: 50%;
-        background-color: rgba(243, 0, 227, 0.198);
+        background-color: rgba(74, 44, 64, 0.15); /* Pink transparan */
         transition: all 0.3s ease;
     }
 
     .social-icons a img {
         width: 20px;
         height: 20px;
-        transition: transform 0.3s ease;
+        transition: all 0.3s ease;
+        /* Pastikan ikon berwarna gelap, jika ikonmu putih, hapus filter ini */
+        filter: brightness(0) invert(15%) sepia(25%) saturate(2000%) hue-rotate(270deg); 
     }
 
     .social-icons a:hover {
-        background-color: rgba(255, 0, 225, 0.603);
+        background-color: #4a2c40; 
         transform: translateY(-3px);
     }
 
     .social-icons a:hover img {
         transform: scale(1.1);
+        filter: brightness(0) invert(100%); 
     }
 
     .footer-bottom {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        font-size: 14px;
+        font-size: 13px;
         flex-wrap: wrap;
         gap: 10px;
+        color: rgba(23, 3, 31, 0.7);
     }
 
     /* Responsive untuk layar HP */
@@ -131,9 +130,14 @@
             flex-direction: column;
             text-align: center;
             align-items: center;
+            gap: 30px;
         }
 
         .footer-brand {
+            align-items: center;
+        }
+
+        .footer-center, .footer-social {
             align-items: center;
         }
 
@@ -165,12 +169,12 @@
         <!-- Bagian Tengah -->
         <div class="footer-center">
             <div class="footer-title">Jelajahi</div>
-            <div class="footer-links">
-                <a href="index.html">Beranda</a>
-                <a href="produk.html">Produk</a>
-                <a href="tentang.html">Tentang Kami</a>
-                <a href="galeri.html">Galeri</a>
-            </div>
+            <ul class="footer-links">
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="produk.html">Produk</a></li>
+                <li><a href="tentang.html">Tentang Kami</a></li>
+                <li><a href="galeri.html">Galeri</a></li>
+            </ul>
         </div>
 
         <!-- Bagian Kanan: Sosial Media -->
@@ -193,6 +197,6 @@
 
     <!-- Bagian Bawah: Copyright -->
     <div class="footer-bottom">
-        <p>&copy; <span id="current-year"></span> ZamzamMecca CRAFT. All rights reserved.</p>
+        <p>&copy; <span id="tahun-sekarang"></span> ZamzamMecca CRAFT. All rights reserved.</p>
     </div>
 </footer>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/kontak.css">
+    <title>Kontak - ZamzamMecca CRAFT</title>
+</head>
+
+<body>
+    <nav id="nav-container"></nav>
+
+    <header class="kontak-hero">
+        <h1>Hubungi Kami!</h1>
+        <p>Punya pertanyaan atau ingin konsultasi tema buket impianmu? Jangan ragu untuk menghubungi kami.</p>
+    </header>
+
+    <main>
+        <section class="kontak-grid">
+            <!-- Kolom Kiri: Form WhatsApp -->
+            <div class="kontak-form-card">
+                <h2>Kirim Pesan Cepat</h2>
+                <form id="wa-form" onsubmit="kirimWhatsApp(event)">
+                    <div class="form-group">
+                        <label for="nama">Nama Kamu</label>
+                        <input type="text" id="nama" placeholder="Contoh: Eka" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="pesan">Pesan / Pertanyaan</label>
+                        <textarea id="pesan" rows="5" placeholder="Tulis pertanyaanmu di sini..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn-wa-form">
+                        <img src="public/icons/wa.svg" alt="WA Icon">
+                        Kirim via WhatsApp
+                    </button>
+                </form>
+            </div>
+
+            <!-- Kolom Kanan: Info Kontak -->
+            <div class="kontak-info-card">
+                <h2>Informasi Kontak</h2>
+                
+                <div class="info-item">
+                    <div class="info-icon">📞</div>
+                    <div>
+                        <h4>WhatsApp</h4>
+                        <p>0852-6252-6261</p>
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <div class="info-icon">📸</div>
+                    <div>
+                        <h4>Instagram</h4>
+                        <p>@eka_zamzammecca_craft</p>
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <div class="info-icon">📍</div>
+                    <div>
+                        <h4>Lokasi Workshop</h4>
+                        <p>ZamzamMecca CRAFT dan Buket, Medan</p>
+                    </div>
+                </div>
+
+                <!-- Sosial Media -->
+                <div class="info-sosmed">
+                    <a href="https://www.instagram.com/eka_zamzammecca_craft" target="_blank"><img src="public/icons/ig.svg" alt="IG"></a>
+                    <a href="https://wa.me/6285262526261" target="_blank"><img src="public/icons/wa.svg" alt="WA"></a>
+                    <a href="https://facebook.com/eka.walady" target="_blank"><img src="public/icons/fb.svg" alt="FB"></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Maps -->
+        <section class="map-section-kontak">
+             <div class="map-container">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3981.4834559241795!2d98.66033171108732!3d3.7041278962542865!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3036cd544d1747a1%3A0x2d95a81ca0833c44!2sZamzamMecca%20CRAFT%20dan%20Buket!5e0!3m2!1sid!2sid!4v1778842413835!5m2!1sid!2sid" 
+                    style="border:0; border-radius: 16px;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </section>
+    </main>
+
+    <footer id="footer-container"></footer>
+
+    <script src="js/main.js"></script>
+
+    <!-- Script Form WhatsApp -->
+    <script>
+        function kirimWhatsApp(event) {
+            event.preventDefault(); // Cegah form reload halaman
+            const nama = document.getElementById('nama').value;
+            const pesan = document.getElementById('pesan').value;
+            const teksWA = `Halo Kak Eka, saya *${nama}*.\n\n${pesan}`; // format pesan
+            const nomorWA = "6285262526261";
+            const url = `https://wa.me/${nomorWA}?text=${encodeURIComponent(teksWA)}`;
+            window.open(url, '_blank');
+        }
+    </script>
+</body>
+
+</html>
