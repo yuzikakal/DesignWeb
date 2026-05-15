@@ -30,7 +30,7 @@
     padding: 0 20px;
 }
 
-.kontak-form-card, .kontak-info-card {
+.kontak-form-card {
     background-color: white;
     padding: 40px;
     border-radius: 20px;
@@ -99,74 +99,155 @@
 .btn-wa-form img {
     width: 22px;
     height: 22px;
-    filter: brightness(0) invert(1); /* Ikon jadi putih */
 }
 
 /* Styling Info Kontak */
+.kontak-info-card {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
 .info-item {
     display: flex;
     gap: 15px;
-    margin-bottom: 25px;
     align-items: flex-start;
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(74, 44, 64, 0.08);
+    text-decoration: none;
 }
 
 .info-icon {
     font-size: 24px;
-    width: 45px;
-    height: 45px;
     background-color: rgba(221, 58, 167, 0.1);
-    border-radius: 50%;
+    border-radius: 20%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
+.info-icon img {
+    width: 20px;
+    height: 20px;
+    filter: invert(33%) sepia(97%) saturate(2329%) hue-rotate(297deg) brightness(88%) contrast(93%);
+
+    margin: 15px;
+}
+    
 .info-item h4 {
     font-family: 'Poppins', sans-serif;
-    font-size: 15px;
+    font-size: 14px;
     color: #4a2c40;
-    margin-bottom: 3px;
+    margin-bottom: 10px;
 }
 
 .info-item p {
     font-family: 'Poppins', sans-serif;
-    font-size: 13px;
+    font-size: 18px;
     color: #6d4c62;
 }
 
-.info-sosmed {
-    display: flex;
-    gap: 12px;
-    margin-top: 30px;
-    padding-top: 20px;
-    border-top: 1px solid #f3e6f8;
+/* Styling FAQ  */
+
+.faq-section {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 60px auto;
+    padding: 0 20px;
 }
 
-.info-sosmed a {
-    width: 40px;
-    height: 40px;
-    background-color: rgba(74, 44, 64, 0.1);
-    border-radius: 50%;
+.faq-section h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 32px;
+    color: #4a2c40;
+    margin-bottom: 10px;
+}
+
+.faq-section > p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    color: #6d4c62;
+    margin-bottom: 30px;
+}
+
+.faq-container {
     display: flex;
+    flex-direction: column;
+    gap: 15px;
+    text-align: left;
+}
+
+.faq-item {
+    background-color: white;
+    border-radius: 16px;
+    box-shadow: 0 2px 10px rgba(74, 44, 64, 0.06);
+    overflow: hidden;
+    border-left: 4px solid #dd3aa7;
+    transition: box-shadow 0.3s ease;
+}
+
+.faq-item:hover {
+    box-shadow: 0 4px 15px rgba(221, 58, 167, 0.15);
+}
+
+.faq-question {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
     align-items: center;
-    justify-content: center;
-    transition: all 0.3s ease;
+    padding: 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    color: #4a2c40;
+    text-align: left;
+    gap: 15px;
 }
 
-.info-sosmed a img {
-    width: 20px;
-    height: 20px;
+.faq-icon {
+    font-size: 24px;
+    font-weight: bold;
+    color: #dd3aa7;
+    transition: transform 0.3s ease;
+    flex-shrink: 0;
 }
 
-.info-sosmed a:hover {
-    background-color: #4a2c40;
+.faq-answer {
+    display: grid;
+    grid-template-rows: 0fr; /* 0fr = tinggi nol (tertutup) */
+    transition: grid-template-rows 0.35s ease-out;
 }
 
-.info-sosmed a:hover img {
-    filter: brightness(0) invert(1); /* Putih saat hover */
+.faq-answer p, .faq-answer span {
+    overflow: hidden;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    color: #6d4c62;
+    line-height: 1.7;
+    padding: 0 20px;
 }
 
-/* Maps Bawah */
+.faq-answer ul {
+    padding: 0 20px;
+    margin: 10px 0;
+}
+
+/* Saat FAQ Aktif (Diklik) */
+.faq-item.active .faq-answer {
+    grid-template-rows: 1fr; /* 1fr = tinggi otomatis sesuai konten */
+    padding: 0 0 20px 0;
+}
+
+.faq-item.active .faq-icon {
+    transform: rotate(45deg); /* Memutar + menjadi x */
+}
+
+/* Styling Maps */
 .map-section-kontak {
     max-width: 1000px;
     margin: 0 auto 80px auto;
@@ -185,9 +266,15 @@
 @media (max-width: 768px) {
     .kontak-grid {
         grid-template-columns: 1fr;
+        padding: 0;
     }
 
-    .kontak-form-card, .kontak-info-card {
+    .kontak-form-card {
         padding: 25px;
+        margin: 0 25px;
+    }
+
+    .kontak-info-card {
+        padding: 0 25px;
     }
 }

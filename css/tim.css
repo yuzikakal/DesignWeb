@@ -1,0 +1,176 @@
+/* ========================================= */
+/* STYLE HALAMAN TIM PENGEMBANG              */
+/* ========================================= */
+
+.tim-hero {
+    padding: 150px 20px 60px 20px;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.tim-hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 38px;
+    color: #4a2c40;
+    margin-bottom: 15px;
+}
+
+.tim-hero p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    color: #6d4c62;
+    line-height: 1.7;
+}
+
+/* Grid Layout */
+.tim-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    max-width: 1000px;
+    margin: 0 auto 80px auto;
+    padding: 0 20px;
+}
+
+/* Kartu Profil */
+/* Kartu Profil - Diperbarui dengan Flexbox */
+.tim-card {
+    background-color: white;
+    padding: 40px 25px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(74, 44, 64, 0.08);
+    transition: all 0.4s ease;
+    position: relative;
+    overflow: hidden;
+    /* Tambahan agar kartu rata tingginya */
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+/* Deskripsi - Diperbarui agar mendorong sosmed ke bawah */
+
+
+/* Garis dekoratif di bawah kartu saat hover */
+.tim-card::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: #dd3aa7;
+    transform: scaleX(0);
+    transition: transform 0.4s ease;
+}
+
+.tim-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(221, 58, 167, 0.2);
+}
+
+.tim-card:hover::after {
+    transform: scaleX(1); /* Garis bawah muncul */
+}
+
+/* Foto Profil */
+.tim-avatar {
+    width: 130px;
+    height: 130px;
+    margin: 0 auto 20px auto;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 4px solid #fff;
+    box-shadow: 0 5px 15px rgba(74, 44, 64, 0.15);
+    transition: transform 0.4s ease;
+}
+
+.tim-card:hover .tim-avatar {
+    transform: scale(1.05);
+}
+
+.tim-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Teks */
+.tim-card h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    color: #4a2c40;
+    margin-bottom: 5px;
+}
+
+.tim-role {
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    color: #dd3aa7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+.tim-desc {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    color: #6d4c62;
+    line-height: 1.6;
+    margin-bottom: 25px;
+    /* Ini yang membuat teks mengambil sisa ruang kosong & mendorong div sosmed ke dasar */
+    flex-grow: 1; 
+}
+
+/* Ikon Sosmed */
+.tim-sosmed {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+}
+
+.tim-sosmed a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background-color: rgba(74, 44, 64, 0.1);
+    transition: all 0.3s ease;
+}
+
+.tim-sosmed a img {
+    width: 18px;
+    height: 18px;
+    filter: brightness(0); 
+}
+
+.tim-sosmed a:hover img {
+    filter: brightness(0) invert(1);
+}
+
+.tim-sosmed a:hover {
+    background-color: #4a2c40;
+    transform: translateY(-3px);
+}
+
+
+/* ========================================= */
+/* RESPONSIVE MOBILE                         */
+/* ========================================= */
+@media (max-width: 768px) {
+    .tim-grid {
+        grid-template-columns: 1fr;
+        max-width: 400px;
+        gap: 25px;
+    }
+
+    .tim-avatar {
+        width: 110px;
+        height: 110px;
+    }
+}

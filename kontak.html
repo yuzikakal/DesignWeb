@@ -40,49 +40,146 @@
 
             <!-- Kolom Kanan: Info Kontak -->
             <div class="kontak-info-card">
-                <h2>Informasi Kontak</h2>
-                
-                <div class="info-item">
-                    <div class="info-icon">📞</div>
-                    <div>
-                        <h4>WhatsApp</h4>
-                        <p>0852-6252-6261</p>
+                <a class="info-item" href="https://facebook.com/eka.walady" target="_blank" rel="noopener noreferrer">
+                    <div class="info-icon">
+                        <img src="public/icons/fb.svg" alt="Facebook">
                     </div>
-                </div>
+                    <div>
+                        <h4>Facebook</h4>
+                        <p>Eka Bunda Zamzam Mecca</p>
+                    </div>
+                </a>
 
-                <div class="info-item">
-                    <div class="info-icon">📸</div>
+                <a class="info-item" href="https://www.instagram.com/eka_zamzammecca_craft" target="_blank"
+                    rel="noopener noreferrer">
+                    <div class="info-icon">
+                        <img src="public/icons/ig.svg" alt="IG">
+                    </div>
                     <div>
                         <h4>Instagram</h4>
-                        <p>@eka_zamzammecca_craft</p>
+                        <p>eka_zamzammecca_craft</p>
                     </div>
-                </div>
+                </a>
 
-                <div class="info-item">
-                    <div class="info-icon">📍</div>
+                <!-- DIPERBAIKI: Link Youtube yang sebelumnya masih link maps -->
+                <a class="info-item" href="https://youtube.com/@ZamzamMeccaCraft" target="_blank"
+                    rel="noopener noreferrer">
+                    <div class="info-icon">
+                        <img src="public/icons/yt.svg" alt="Youtube">
+                    </div>
+                    <div>
+                        <h4>Youtube</h4>
+                        <p>ZamzamMecca CRAFT</p>
+                    </div>
+                </a>
+
+                <a class="info-item"
+                    href="https://www.google.com/maps/place/ZamzamMecca+CRAFT+dan+Buket/@3.7041279,98.6603317,17z/data=!3m1!4b1!4m5!3m4!1s0x3036cd544d1747a1:0x2d95a81ca0833c44!8m2!3d3.7041279!4d98.6603317"
+                    target="_blank">
+                    <div class="info-icon">
+                        <img src="public/icons/location.svg" alt="Map">
+                    </div>
                     <div>
                         <h4>Lokasi Workshop</h4>
                         <p>ZamzamMecca CRAFT dan Buket, Medan</p>
                     </div>
+                </a>
+            </div>
+        </section>
+
+        <!-- SECTION FAQ BARU -->
+        <section class="faq-section">
+            <h2>Pertanyaan yang Sering Ditanyakan</h2>
+            <p>Sudahkah pertanyaanmu terjawab di sini?</p>
+
+            <div class="faq-container">
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFaq(this)">
+                        <span>Apakah produk bisa request custom?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Ya, tentu saja! Kami justru sangat senang jika kamu ingin merancang buket atau aksesoris
+                            sesuai keinginanmu. Kamu bisa memilih warna, tema, dan jenis bahan. Langsung konsultasikan
+                            via WhatsApp atau langsung ke toko kami ya!</p>
+                    </div>
                 </div>
 
-                <!-- Sosial Media -->
-                <div class="info-sosmed">
-                    <a href="https://www.instagram.com/eka_zamzammecca_craft" target="_blank"><img src="public/icons/ig.svg" alt="IG"></a>
-                    <a href="https://wa.me/6285262526261" target="_blank"><img src="public/icons/wa.svg" alt="WA"></a>
-                    <a href="https://facebook.com/eka.walady" target="_blank"><img src="public/icons/fb.svg" alt="FB"></a>
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFaq(this)">
+                        <span>Berapa lama proses pengerjaan pesanan?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Untuk pesanan ready stock, bisa dikirim di hari yang sama. Untuk pesanan custom, pengerjaan
+                            memakan waktu sekitar 1 sampai 5 hari tergantung tingkat kesulitan dan antrian.</p>
+                    </div>
                 </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFaq(this)">
+                        <span>Bagaimana cara pembayaran?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Kami menerima pembayaran melalui Pembayaran langsung, Transfer Bank Mandiri, dan E-Wallet
+                            (DANA & ShopeePay). Untuk pesanan custom, kami meminta DP 50% sebelum pengerjaan.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFaq(this)">
+                        <span>Apa saja pilihan dan biaya untuk isi buket?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <span>Kami menyediakan berbagai pilihan isi buket dengan ketentuan harga sebagai berikut:
+                            <ul>
+                                <li><strong>Slot Uang:</strong> Rp5.000 per 1 slot uang (belum termasuk lembaran uang).
+                                </li>
+                                <li><strong>Bunga:</strong> Rp5.000 per 1 kuntum bunga.</li>
+                                <li><strong>Boneka:</strong> Rp20.000 - Rp25.000 per buah (tergantung ukuran/jenis).
+                                </li>
+                            </ul>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFaq(this)">
+                        <span>Apakah bisa menambah aksesoris pada buket?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <span>Bisa. Kami menyediakan aksesoris tambahan untuk mempercantik buket Anda:
+                            <ul>
+                                <li><strong>Kupu-kupu:</strong> Rp5.000 (mendapatkan 3 pcs).</li>
+                                <li><strong>Mahkota:</strong> Rp15.000 per 1 buah mahkota.</li>
+                            </ul>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFaq(this)">
+                        <span>Bagaimana cara menghitung total harga buket berisi?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Total biaya buket berisi dihitung dari kombinasi item pilihan Anda (slot uang/bunga/boneka)
+                            ditambah dengan aksesoris yang dipilih. Biaya ini belum termasuk jasa pembuatan.
+                        </p>
+                    </div>
+                </div>
+
             </div>
         </section>
 
         <!-- Maps -->
         <section class="map-section-kontak">
-             <div class="map-container">
-                <iframe 
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3981.4834559241795!2d98.66033171108732!3d3.7041278962542865!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3036cd544d1747a1%3A0x2d95a81ca0833c44!2sZamzamMecca%20CRAFT%20dan%20Buket!5e0!3m2!1sid!2sid!4v1778842413835!5m2!1sid!2sid" 
-                    style="border:0; border-radius: 16px;" 
-                    allowfullscreen="" 
-                    loading="lazy" 
+            <div class="map-container">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3981.4834559241795!2d98.66033171108732!3d3.7041278962542865!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3036cd544d1747a1%3A0x2d95a81ca0833c44!2sZamzamMecca%20CRAFT%20dan%20Buket!5e0!3m2!1sid!2sid!4v1778842413835!5m2!1sid!2sid"
+                    style="border:0; border-radius: 16px;" allowfullscreen="" loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade">
                 </iframe>
             </div>
@@ -93,16 +190,33 @@
 
     <script src="js/main.js"></script>
 
-    <!-- Script Form WhatsApp -->
+    <!-- Script Form WhatsApp & FAQ -->
     <script>
         function kirimWhatsApp(event) {
-            event.preventDefault(); // Cegah form reload halaman
+            event.preventDefault();
             const nama = document.getElementById('nama').value;
             const pesan = document.getElementById('pesan').value;
-            const teksWA = `Halo Kak Eka, saya *${nama}*.\n\n${pesan}`; // format pesan
+            const teksWA = `Halo Kak, saya *${nama}*.\n\n${pesan}`;
             const nomorWA = "6285262526261";
             const url = `https://wa.me/${nomorWA}?text=${encodeURIComponent(teksWA)}`;
             window.open(url, '_blank');
+        }
+
+        // Script Accordion FAQ
+        function toggleFaq(button) {
+            const faqItem = button.parentElement;
+            const isActive = faqItem.classList.contains('active');
+
+            // Tutup semua FAQ lainnya
+            document.querySelectorAll('.faq-item').forEach(item => {
+                item.classList.remove('active');
+            });
+
+            // Jika FAQ yang diklik sebelumnya tidak aktif, buka (toggle)
+            if (!isActive) {
+                faqItem.classList.add('active');
+
+            }
         }
     </script>
 </body>
