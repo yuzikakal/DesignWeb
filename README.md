@@ -7,7 +7,7 @@
   <br><br>
   <p><i>Platform website bisnis ZamzamMecca CRAFT. Menyajikan koleksi aksesoris manis dan buket spesial yang dibuat dengan cinta, dilengkapi dengan fitur pemesanan langsung melalui WhatsApp.</i></p>
   
-  🌐 <strong>Live Demo:</strong> <a href="https://yuzikakal.github.io/DesignWeb">yuzikakal.github.io/DesignWeb</a>
+  🌐 <strong>Live Demo:</strong> <a href="https://yuzikakal.github.io/DesignWeb" target="_blank">yuzikakal.github.io/DesignWeb</a>
   <br><br>
   
   <img src="https://via.placeholder.com/800x450?text=Screenshot+ZamzamMecca+CRAFT" alt="Tampilan ZamzamMecca CRAFT" width="80%">
@@ -65,7 +65,7 @@ Di balik layar pengembangan website ZamzamMecca CRAFT:
     </td>
     <!-- Sarhan -->
     <td align="center" width="33%">
-      <img src="https://via.placeholder.com/150?text=S" alt="Sarhan" style="border-radius: 50%;"><br>
+      <img src="https://imgur.com/a/IFvDZyM" alt="Sarhan" style="border-radius: 50%;"><br>
       <strong>Sarhan</strong><br>
       <sub><b>QA Tester</b></sub><br>
       <br><br>
