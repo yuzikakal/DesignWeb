@@ -1,4 +1,3 @@
-```markdown
 # 🎀 ZamzamMecca CRAFT
 
 <div align="center">
@@ -93,36 +92,3 @@ zamzammecca-craft/
 │   ├── icons/          # Asset ikon (github.svg, discord.svg, ig.svg, dll)
 │   └── img/            # Asset gambar produk & avatar (orang.jpeg, dll)
 └── README.md           # Dokumentasi proyek ini
-```
-
----
-
-## 💻 Cara Menjalankan Secara Lokal
-
-Jika kamu ingin mengembangkan atau menjalankan proyek ini di komputermu sendiri, ikuti langkah-langkah berikut:
-
-1. **Clone repository ini**
-   ```bash
-   git clone https://github.com/yuzikakal/[nama-repo-kamu].git
-   ```
-2. **Masuk ke direktori proyek**
-   ```bash
-   cd [nama-repo-kamu]
-   ```
-3. **Jalankan secara lokal**
-   Karena proyek ini murni HTML/CSS/JS tanpa framework, kamu cukup membuka file `index.html` langsung di browser favoritmu, atau gunakan ekstensi **Live Server** di VS Code untuk pengalaman *auto-reload* yang lebih baik.
-
----
-
-## 📝 Catatan Tambahan
-
-* Untuk foto profil **Sarhan** di bagian Tim, ganti link `https://via.placeholder.com/150?text=S` dengan link gambar online (upload ke GitHub/Imgur lalu ambil linknya).
-* Link WhatsApp terintegrasi langsung melalui format `https://wa.me/62...`, pastikan nomor tersebut sudah benar dan aktif.
-
----
-
-## 📜 Lisensi
-
-Proyek ini dibuat untuk keperluan showcase dan bisnis **ZamzamMecca CRAFT**. 
-© 2024 ZamzamMecca CRAFT. All rights reserved.
-```
