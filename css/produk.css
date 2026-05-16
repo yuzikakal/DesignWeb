@@ -5,6 +5,13 @@ header {
     cursor: default;
 }
 
+header h1 {
+    font-size: 38px;
+    margin-bottom: 15px;
+    font-family: 'Playfair Display', serif;
+    color: #4a2c40;
+}
+
 .grid-produk {
     display: grid;
     grid-template-columns: repeat(2, 1fr); 
@@ -48,10 +55,14 @@ header {
 
 .card-info h3 {
     font-size: 13px; 
+    color: #4a2c40;
+    font-family: 'Poppins', sans-serif;
 }
 
 .card-info p {
     font-size: 12px; 
+    font-family: 'Poppins', sans-serif;
+    color: #6d4c62;
 }
 
 /* CSS POP-UP*/
@@ -106,6 +117,8 @@ header {
 .modal-body h3 {
     font-size: 20px;
     margin-bottom: 5px;
+    font-family: 'Playfair Display', sans-serif;
+    color: #4a2c40;
 }
 
 .modal-body .harga {
