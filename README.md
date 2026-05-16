@@ -65,7 +65,7 @@ Di balik layar pengembangan website ZamzamMecca CRAFT:
     </td>
     <!-- Sarhan -->
     <td align="center" width="33%">
-      <img src="https://imgur.com/a/IFvDZyM" alt="Sarhan" style="border-radius: 50%;"><br>
+      <img src="public/img/orang.jpeg" alt="Sarhan" style="border-radius: 50%;"><br>
       <strong>Sarhan</strong><br>
       <sub><b>QA Tester</b></sub><br>
       <br><br>
