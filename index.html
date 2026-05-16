@@ -31,9 +31,21 @@
                 </a>
             </div>
         </div>
-        <div class="header-img">
-            <img src="public/img/buket1.jpeg" alt="foto">
+    <div class="header-img">
+    <div class="slider-container"> 
+        <div class="slider-wrapper">
+            <div class="slide">
+                <img src="public/img/buket1.jpeg" alt="Karya 1">
+            </div>
+            <div class="slide">
+                <img src="public/img/buket2.jpeg" alt="Karya 2"> 
+            </div>
+            <div class="slide">
+                <img src="public/img/buket6.jpeg" alt="Karya 3">
+            </div>
         </div>
+    </div>
+</div>
     </header>
 
     <main>
@@ -115,6 +127,29 @@
         } else {
             tampilTerlaris.innerHTML = `<p style="text-align:center; color:#888;">Produk terlaris segera hadir!</p>`;
         }
+
+        // Auto Slide Header (Efek Geser)
+    const wrapper = document.querySelector('.slider-wrapper');
+    const slides = document.querySelectorAll('.slide');
+    let index = 0;
+
+    function nextSlide() {
+        if (!wrapper || slides.length === 0) return;
+
+        index++;
+
+        // Jika sudah di akhir, kembali ke awal
+        if (index >= slides.length) {
+            index = 0;
+        }
+
+        // Geser wrapper berdasarkan indeks (min-width: 100%)
+        const percentageToSlide = -index * 100;
+        wrapper.style.transform = `translateX(${percentageToSlide}%)`;
+    }
+
+    // Ganti gambar setiap 2.5 detik
+    setInterval(nextSlide, 2500);
     </script>
 </body>
 
