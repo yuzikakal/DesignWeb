@@ -34,14 +34,14 @@
 <td align="center" width="50%">
 
 ### Desktop View
-<img src="https://via.placeholder.com/700x400?text=Desktop+Preview" alt="Desktop Preview" width="100%">
+<img src="public/img/desktop_ss.png" alt="Desktop Preview" width="100%">
 
 </td>
 
 <td align="center" width="50%">
 
 ### Mobile View
-<img src="https://via.placeholder.com/250x500?text=Mobile+Preview" alt="Mobile Preview" width="70%">
+<img src="public/img/mobile_ss.png" alt="Mobile Preview" width="70%">
 
 </td>
 </tr>
@@ -83,69 +83,43 @@
 # 👥 Tim Pengembang
 
 <table align="center">
-<tr>
-<td align="center">
-
-<img src="https://avatars.githubusercontent.com/u/185152868?s=150&v=4" width="120" style="border-radius:50%;"><br>
-
-## Yuzika
-
-**Lead Developer & Designer**
-
-<a href="https://github.com/yuzikakal" target="_blank">
-  <img src="https://img.shields.io/badge/GitHub-100000?style=flat&logo=github&logoColor=white">
-</a>
-
-<a href="https://yuzika5.wordpress.com" target="_blank">
-  <img src="https://img.shields.io/badge/Website-000000?style=flat&logo=About.me&logoColor=white">
-</a>
-
-<a href="https://www.instagram.com/yuzika_kalzamzami" target="_blank">
-  <img src="https://img.shields.io/badge/Instagram-E4405F?style=flat&logo=instagram&logoColor=white">
-</a>
-
-</td>
-</tr>
-
-<tr>
-<td align="center">
-
-<img src="https://avatars.githubusercontent.com/u/234161588?s=150&v=4" width="120" style="border-radius:50%;"><br>
-
-## Fauzan Fadhil
-
-**UI/UX & Concept Partner**
-
-<a href="https://github.com/fauzanketche" target="_blank">
-  <img src="https://img.shields.io/badge/GitHub-100000?style=flat&logo=github&logoColor=white">
-</a>
-
-<a href="https://discord.com/users/955846335293190154" target="_blank">
-  <img src="https://img.shields.io/badge/Discord-5865F2?style=flat&logo=discord&logoColor=white">
-</a>
-
-<a href="https://www.instagram.com/fauzanfdhil_" target="_blank">
-  <img src="https://img.shields.io/badge/Instagram-E4405F?style=flat&logo=instagram&logoColor=white">
-</a>
-
-</td>
-</tr>
-
-<tr>
-<td align="center">
-
-<img src="public/img/orang.jpeg" width="120" style="border-radius:50%;"><br>
-
-## Sarhan
-
-**Quality Assurance Tester**
-
-<a href="https://www.instagram.com/s.alzamm" target="_blank">
-  <img src="https://img.shields.io/badge/Instagram-E4405F?style=flat&logo=instagram&logoColor=white">
-</a>
-
-</td>
-</tr>
+  <tr>
+    <td align="center" width="150px">
+      <img src="https://avatars.githubusercontent.com/u/185152868?s=150&u=64c1f1d3b5532b719789a40a9cac3ded13fdb698&v=4" alt="Yuzika" style="border-radius: 50%; width: 100px; height: 100px; object-fit: cover;">
+    </td>
+    <td>
+      <strong>Yuzika</strong> <br>
+      <i>Lead Developer & Designer</i> <br><br>
+      <a href="https://github.com/yuzikakal" target="_blank"><img src="https://img.shields.io/badge/GitHub-100000?style=flat&logo=github&logoColor=white"></a>
+      <a href="https://yuzika5.wordpress.com" target="_blank"><img src="https://img.shields.io/badge/Website-000000?style=flat&logo=About.me&logoColor=white"></a>
+      <a href="https://www.facebook.com/yuzikakal2" target="_blank"><img src="https://img.shields.io/badge/Facebook-1877F2?style=flat&logo=facebook&logoColor=white"></a>
+      <a href="https://www.instagram.com/yuzika_kalzamzami" target="_blank"><img src="https://img.shields.io/badge/Instagram-E4405F?style=flat&logo=instagram&logoColor=white"></a>
+    </td>
+  </tr>
+  
+  <tr>
+    <td align="center" width="150px">
+      <img src="https://avatars.githubusercontent.com/u/234161588?s=150&u=220605485ccf3153dd459ea7cea0ddb24587bfbb&v=4" alt="Fauzan Fadhil" style="border-radius: 50%; width: 100px; height: 100px; object-fit: cover;">
+    </td>
+    <td>
+      <strong>Fauzan Fadhil</strong> <br>
+      <i>UI/UX & Concept Partner</i> <br><br>
+      <a href="https://github.com/fauzanketche" target="_blank"><img src="https://img.shields.io/badge/GitHub-100000?style=flat&logo=github&logoColor=white"></a>
+      <a href="https://discord.com/users/955846335293190154" target="_blank"><img src="https://img.shields.io/badge/Discord-5865F2?style=flat&logo=discord&logoColor=white"></a>
+      <a href="https://www.instagram.com/fauzanfdhil_" target="_blank"><img src="https://img.shields.io/badge/Instagram-E4405F?style=flat&logo=instagram&logoColor=white"></a>
+    </td>
+  </tr>
+  
+  <tr>
+    <td align="center" width="150px">
+      <img src="public/img/orang.jpeg" alt="Sarhan" style="border-radius: 50%; width: 100px; height: 100px; object-fit: cover;">
+    </td>
+    <td>
+      <strong>Sarhan</strong> <br>
+      <i>QA Tester</i> <br><br>
+      <a href="https://www.instagram.com/s.alzamm" target="_blank"><img src="https://img.shields.io/badge/Instagram-E4405F?style=flat&logo=instagram&logoColor=white"></a>
+    </td>
+  </tr>
 </table>
 
 ---
