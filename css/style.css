@@ -1,33 +1,49 @@
 /* index.html > style.css */
-/* header style */
+
 /* header style */
 header {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    min-height: 90vh;
+    padding-top: 7rem;
+    display: flex;
     align-items: center;
-    min-height: calc(100vh - 100px);
-    gap: 50px;
 }
 
-/* Teks di kiri */
+.header-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    width: 100%;
+}
+
 .header-text {
     display: flex;
     flex-direction: column;
-    padding: 50px 80px; 
     line-height: 1.2;
     color: #4a2c40;
 }
 
 .header-text h1 {
     font-family: 'Playfair Display', serif;
-    font-size: 42px;
+    font-size: 3rem;
     font-weight: 700;
     margin-bottom: 10px;
+    line-height: 1.1;
+}
+
+.header-text h1 span {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    color: #dd3aa7;
 }
 
 .header-text p {
     font-family: 'Poppins', sans-serif;
-    font-size: 16px;
+    font-size: 1.125rem;
     line-height: 1.7;
     color: #6d4c62;
     margin-bottom: 10px;
@@ -43,9 +59,9 @@ header {
 
 .slider-container {
     width: 100%;
-    max-width: 400px; 
+    max-width: 400px;
     aspect-ratio: 3 / 4;
-    overflow: hidden; 
+    overflow: hidden;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     position: relative;
     border-radius: 0px;
@@ -176,12 +192,11 @@ main {
     transition: all 0.4s ease;
 }
 
-/* Garis atas yang memanjang saat hover */
 .keunggulan-bar {
     position: absolute;
     top: 0;
     left: 0;
-    width: 60px; /* Panjang awal */
+    width: 60px;
     height: 4px;
     background-color: #dd3aa7;
     transition: all 0.4s ease;
@@ -190,7 +205,7 @@ main {
 .keunggulan-icon {
     font-size: 35px;
     margin-bottom: 20px;
-    background-color: rgba(221, 58, 167, 0.1); 
+    background-color: rgba(221, 58, 167, 0.1);
     width: 80px;
     height: 80px;
     border-radius: 50%;
@@ -217,13 +232,13 @@ main {
 }
 
 .keunggulan-card:hover {
-    background-color: #dd3aa7; 
+    background-color: #dd3aa7;
     transform: translateY(-8px);
     box-shadow: 0 10px 25px rgba(221, 58, 167, 0.3);
 }
 
 .keunggulan-card:hover .keunggulan-bar {
-    width: 100%; /* Garis atas memanjang penuh */
+    width: 100%;
     background-color: white;
 }
 
@@ -237,7 +252,7 @@ main {
 }
 
 .keunggulan-card:hover p {
-    color: rgba(255, 255, 255, 0.9); 
+    color: rgba(255, 255, 255, 0.9);
 }
 
 /* 2. Produk Terlaris */
@@ -323,35 +338,19 @@ main {
 }
 
 /* Responsive Mobile */
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     header {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        min-height: auto;
-        padding: 120px 20px 50px 20px;
-        gap: 70px;
-    }
-
-    .header-text {
-        padding: 0;
-        font-size: 20px;
-        order: 2;
-    }
-
-    .header-img {
-        order: 1; /* Posisi foto di atas teks */
-        width: 100%;
+        padding: 100px 15px 40px 15px;
     }
 
     .slider-container {
-        max-width: 280px; /* Mengecilkan bingkai foto sedikit agar pas di layar HP */
-        /* aspect-ratio 3/4 akan otomatis mengikuti */
+        max-width: 280px;
     }
 
     .header-hubungi {
+        padding: 0;
         flex-direction: column;
-        gap: 15px;
+        gap: 10px;
         align-items: center;
     }
 
@@ -392,5 +391,37 @@ main {
     .grid-terlaris {
         grid-template-columns: repeat(2, 1fr);
         gap: 15px;
+    }
+}
+
+/* Responsive tablet */
+@media (min-width: 768px) {
+    .header-grid {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+
+    .header-text h1 {
+        font-size: 3rem;
+    }
+
+    .header-text p {
+        font-size: 1.25rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    header {
+        padding-top: 5rem;
+    }
+
+    .header-grid {
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        max-width: 1600px;
+    }
+
+    .header-text h1 {
+        font-size: 3.75rem;
     }
 }

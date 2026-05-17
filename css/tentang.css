@@ -164,7 +164,7 @@
 /* RESPONSIVE MOBILE */
 @media (max-width: 768px) {
     .tentang-hero {
-        padding: 120px 15px 40px 15px;
+        padding: 100px 15px 40px 15px;
     }
 
     .tentang-hero h1 {

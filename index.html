@@ -12,40 +12,42 @@
 <body>
     <nav id="nav-container"></nav>
 
-    <header>
-        <div class="header-text">
-            <h1>Setiap Karyanya,</h1>
-            <h1 style="font-style: italic;">Dibuat dengan Cinta</h1>
-            <p>
-                Temukan koleksi aksesoris manis dan buket spesial untuk momen
-                berharga Anda. Dari kami, untuk senyum di wajah Anda.
-            </p>
-            <div class="header-hubungi">
-                <a href="produk.html" class="header-produk">
-                    <img src="public/icons/bag.svg" alt="Produk">
-                    Lihat Produk
-                </a>
-                <a href="https://wa.me/6285262526261" class="header-whatsapp" target="_blank" rel="noopener noreferrer">
-                    <img src="public/icons/wa.svg" alt="WhatsApp">
-                    <span>Hubungi Kami</span>
-                </a>
+    <header id="beranda">
+        <div class="header-grid">
+            <div class="header-text">
+                <h1>Setiap Karyanya, <br> <span>Dibuat dengan Cinta</span></h1>
+                <p>
+                    Temukan koleksi aksesoris manis dan buket spesial untuk momen
+                    berharga Anda. Dari kami, untuk senyum di wajah Anda.
+                </p>
+                <div class="header-hubungi">
+                    <a href="produk.html" class="header-produk">
+                        <img src="public/icons/bag.svg" alt="Produk">
+                        Lihat Produk
+                    </a>
+                    <a href="https://wa.me/6285262526261" class="header-whatsapp" target="_blank"
+                        rel="noopener noreferrer">
+                        <img src="public/icons/wa.svg" alt="WhatsApp">
+                        <span>Hubungi Kami</span>
+                    </a>
+                </div>
+            </div>
+            <div class="header-img">
+                <div class="slider-container">
+                    <div class="slider-wrapper">
+                        <div class="slide">
+                            <img src="public/img/buket1.jpeg" alt="Karya 1">
+                        </div>
+                        <div class="slide">
+                            <img src="public/img/buket2.jpeg" alt="Karya 2">
+                        </div>
+                        <div class="slide">
+                            <img src="public/img/buket6.jpeg" alt="Karya 3">
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    <div class="header-img">
-    <div class="slider-container"> 
-        <div class="slider-wrapper">
-            <div class="slide">
-                <img src="public/img/buket1.jpeg" alt="Karya 1">
-            </div>
-            <div class="slide">
-                <img src="public/img/buket2.jpeg" alt="Karya 2"> 
-            </div>
-            <div class="slide">
-                <img src="public/img/buket6.jpeg" alt="Karya 3">
-            </div>
-        </div>
-    </div>
-</div>
     </header>
 
     <main>
@@ -129,27 +131,27 @@
         }
 
         // Auto Slide Header (Efek Geser)
-    const wrapper = document.querySelector('.slider-wrapper');
-    const slides = document.querySelectorAll('.slide');
-    let index = 0;
+        const wrapper = document.querySelector('.slider-wrapper');
+        const slides = document.querySelectorAll('.slide');
+        let index = 0;
 
-    function nextSlide() {
-        if (!wrapper || slides.length === 0) return;
+        function nextSlide() {
+            if (!wrapper || slides.length === 0) return;
 
-        index++;
+            index++;
 
-        // Jika sudah di akhir, kembali ke awal
-        if (index >= slides.length) {
-            index = 0;
+            // Jika sudah di akhir, kembali ke awal
+            if (index >= slides.length) {
+                index = 0;
+            }
+
+            // Geser wrapper berdasarkan indeks (min-width: 100%)
+            const percentageToSlide = -index * 100;
+            wrapper.style.transform = `translateX(${percentageToSlide}%)`;
         }
 
-        // Geser wrapper berdasarkan indeks (min-width: 100%)
-        const percentageToSlide = -index * 100;
-        wrapper.style.transform = `translateX(${percentageToSlide}%)`;
-    }
-
-    // Ganti gambar setiap 2.5 detik
-    setInterval(nextSlide, 2500);
+        // Ganti gambar setiap 2.5 detik
+        setInterval(nextSlide, 2500);
     </script>
 </body>
 
