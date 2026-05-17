@@ -112,7 +112,7 @@
   
   <tr>
     <td align="center" width="150px">
-      <img src="public/img/orang.jpeg" alt="Sarhan" style="border-radius: 50%; width: 100px; height: 100px; object-fit: cover;">
+      <img src="public/img/orang.jpeg" alt="Sarhan" style="border-radius: 50%; width: 100px; object-fit: cover;">
     </td>
     <td>
       <strong>Sarhan</strong> <br>
