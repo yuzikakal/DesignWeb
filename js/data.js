@@ -17,8 +17,8 @@ const dataProduk = [
         prioritas: true
     },
     { 
-        nama: "Round Buket Bunga", 
-        harga: "Rp. 200.000", 
+        nama: "Round Buket Bunga Pita Satin 2cm", 
+        harga: "Rp. 230.000", 
         foto: "public/img/buket2.jpeg",
         deskripsi: "Buket bunga segar dengan pilihan warna elegan, sempurna untuk kado ulang tahun.",
         wa: "6285262526261",
@@ -52,7 +52,7 @@ const dataProduk = [
         nama: "Buket Bunga Artificial", 
         harga: "Rp. 85.000", 
         foto: "public/img/buket7.jpeg",
-        deskripsi: "7 tangkai bunga.",
+        deskripsi: "7 kuntum bunga.",
         wa: "6285262526261",
         prioritas: false 
     },
@@ -108,7 +108,7 @@ const dataProduk = [
         nama: "Buket Bunga Artificial", 
         harga: "Rp. 100.000", 
         foto: "public/img/buket14.jpeg",
-        deskripsi: "Buket bunga 10 tangkai.",
+        deskripsi: "Buket bunga 10 kuntum.",
         wa: "6285262526261",
         prioritas: false 
     },
