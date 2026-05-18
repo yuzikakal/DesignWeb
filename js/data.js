@@ -6,18 +6,18 @@ const dataProduk = [
         foto: "public/img/buket17.jpeg",
         deskripsi: "Buket bunga round besar.",
         wa: "6285262526261",
-        prioritas: false 
+        prioritas: true 
     },
     { 
-        nama: "Buket uang Premium", 
-        harga: "Rp. 100.000", 
+        nama: "Buket Uang 20 Lembar", 
+        harga: "Rp. 120.000", 
         foto: "public/img/buket1.jpeg",
         deskripsi: "10 lembar 70.000, 20 lembar 120.000, 30 lembar 150.000, 40 lembar 200.000, 50 lembar 250.000, 100 lembar 450.000",
         wa: "6285262526261",
         prioritas: true
     },
     { 
-        nama: "Buket Bunga", 
+        nama: "Round Buket Bunga", 
         harga: "Rp. 200.000", 
         foto: "public/img/buket2.jpeg",
         deskripsi: "Buket bunga segar dengan pilihan warna elegan, sempurna untuk kado ulang tahun.",
@@ -25,15 +25,15 @@ const dataProduk = [
         prioritas: true
     },
     { 
-        nama: "Buket uang Biasa", 
+        nama: "Buket Bunga", 
         harga: "Rp. 100.000", 
         foto: "public/img/buket4.jpeg",
-        deskripsi: "Buket uang cantik dengan susunan rapi.",
+        deskripsi: "Buket bunga cantik dengan susunan rapi.",
         wa: "6285262526261",
-        prioritas: true 
+        prioritas: false 
     },
     { 
-        nama: "Buket bunga Mini", 
+        nama: "Buket Bunga Mini", 
         harga: "Rp. 80.000", 
         foto: "public/img/buket3.jpeg",
         deskripsi: "Buket bunga mini yang imut dan terjangkau.",
@@ -41,7 +41,7 @@ const dataProduk = [
         prioritas: false 
     },
     { 
-        nama: "Buket bunga Kipas", 
+        nama: "Buket Bunga Kipas", 
         harga: "Rp. 70.000", 
         foto: "public/img/buket6.jpeg",
         deskripsi: "Buket uang 10 lembar.",
@@ -49,7 +49,7 @@ const dataProduk = [
         prioritas: true 
     },
     { 
-        nama: "Buket bunga Artificial", 
+        nama: "Buket Bunga Artificial", 
         harga: "Rp. 85.000", 
         foto: "public/img/buket7.jpeg",
         deskripsi: "7 tangkai bunga.",
@@ -65,7 +65,7 @@ const dataProduk = [
         prioritas: false 
     },
     { 
-        nama: "Buket uang Kipas", 
+        nama: "Buket Uang Kipas", 
         harga: "Rp. 70.000", 
         foto: "public/img/buket9.jpeg",
         deskripsi: "Buket uang 10 lembar.",
@@ -105,7 +105,7 @@ const dataProduk = [
         prioritas: false 
     },
     { 
-        nama: "Buket bunga Artificial", 
+        nama: "Buket Bunga Artificial", 
         harga: "Rp. 100.000", 
         foto: "public/img/buket14.jpeg",
         deskripsi: "Buket bunga 10 tangkai.",
@@ -129,34 +129,34 @@ const dataProduk = [
         prioritas: false 
     },
     { 
-        nama: "Buket bunga Mini", 
-        harga: "Rp. 80.000", 
+        nama: "Bunga Goyang Kawat Bulu Mini Pot", 
+        harga: "Rp. 35.000", 
         foto: "public/img/bungahandmade.jpg",
-        deskripsi: "Buket bunga mini yang imut dan terjangkau.",
+        deskripsi: "Bunga handmade yang lucu untuk menghiasi ruangan.",
         wa: "6285262526261",
         prioritas: false 
     },
     { 
-        nama: "Buket bunga Mini", 
-        harga: "Rp. 80.000", 
+        nama: "Strap HP", 
+        harga: "Rp. 35.000", 
         foto: "public/img/hp1.jpg",
-        deskripsi: "Buket bunga mini yang imut dan terjangkau.",
+        deskripsi: "Aksesoris handphone manis.",
         wa: "6285262526261",
         prioritas: false 
     },
     { 
-        nama: "Buket bunga Mini", 
-        harga: "Rp. 80.000", 
+        nama: "Strap HP", 
+        harga: "Rp. 35.000", 
         foto: "public/img/hp2.jpg",
-        deskripsi: "Buket bunga mini yang imut dan terjangkau.",
+        deskripsi: "Aksesoris handphone manis.",
         wa: "6285262526261",
         prioritas: false 
     },
     { 
-        nama: "Buket bunga Mini", 
-        harga: "Rp. 80.000", 
+        nama: "Aneka Gelang Ceko", 
+        harga: "Mulai dari Rp. 10.000", 
         foto: "public/img/gelang.jpg",
-        deskripsi: "Buket bunga mini yang imut dan terjangkau.",
+        deskripsi: "Aneka kerajinan gelang yang cocok dan cantik untukmu.",
         wa: "6285262526261",
         prioritas: false 
     },
